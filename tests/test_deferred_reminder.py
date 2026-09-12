@@ -16,10 +16,10 @@ from __future__ import annotations
 
 from pydantic import BaseModel
 
-from mewcode.agent import DEFERRED_REMINDER_MARKER, Agent
-from mewcode.conversation import ConversationManager
-from mewcode.tools import ToolRegistry
-from mewcode.tools.base import Tool
+from forgetrail.agent import DEFERRED_REMINDER_MARKER, Agent
+from forgetrail.conversation import ConversationManager
+from forgetrail.tools import ToolRegistry
+from forgetrail.tools.base import Tool
 
 
 class _DeferredTool(Tool):

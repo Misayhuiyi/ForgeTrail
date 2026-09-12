@@ -7,8 +7,8 @@
 
 import json
 
-from mewcode.teams import protocol
-from mewcode.teams.mailbox import MailboxMessage, create_message
+from forgetrail.teams import protocol
+from forgetrail.teams.mailbox import MailboxMessage, create_message
 
 
 class TestShutdownNegotiation:

@@ -1,4 +1,8 @@
 config.yaml
+config.local.yaml
+.env
+.env.*
+!.env.example
 __pycache__/
 *.pyc
 .venv/
@@ -7,7 +11,18 @@ dist/
 build/
 .idea/
 .vscode/
-.mewcode/
+.forgetrail/
+FORGETRAIL.local.md
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+tmp/
+output/
+*.log
+*.pdf
+*.docx
+*.zip
 .claude/
 CLAUDE.md
 
