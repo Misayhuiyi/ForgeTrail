@@ -1,0 +1,37 @@
+[project]
+name = "forgetrail"
+version = "0.2.0"
+description = "ForgeTrail: a terminal coding agent with tool orchestration, context management, and multi-agent collaboration"
+readme = "README.md"
+keywords = ["agent", "coding-agent", "mcp", "react", "multi-agent", "terminal"]
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=2.1.0",
+    "anthropic>=0.47.0",
+    "openai>=1.60.0",
+    "pyyaml>=6.0",
+    "pydantic>=2.0",
+    "mcp>=1.12.0",
+    "httpx>=0.27.0",
+    "websockets>=14.0",
+]
+
+[project.scripts]
+forgetrail = "forgetrail.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/Misayhuiyi/ForgeTrail"
+Issues = "https://github.com/Misayhuiyi/ForgeTrail/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["forgetrail"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-asyncio>=1.3.0",
+]

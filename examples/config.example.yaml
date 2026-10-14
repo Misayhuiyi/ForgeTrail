@@ -1,0 +1,32 @@
+# Copy to .forgetrail/config.yaml and select a model available to your account.
+# An empty api_key reads ANTHROPIC_API_KEY / OPENAI_API_KEY by protocol.
+providers:
+  - name: anthropic
+    protocol: anthropic
+    base_url: https://api.anthropic.com
+    model: your-model-id
+    api_key: ""
+    thinking: false
+
+# Supported protocols: anthropic, openai (Responses), openai-compat (Chat Completions).
+# For OpenAI-compatible endpoints, use the service's base_url and OPENAI_API_KEY.
+permission_mode: default
+enable_fork: true
+enable_verification_agent: false
+enable_coordinator_mode: false
+teammate_mode: in-process
+
+# Enable external tool servers explicitly when needed.
+mcp_servers: []
+# mcp_servers:
+#   - name: context7
+#     command: npx
+#     args: ["-y", "@upstash/context7-mcp"]
+#   - name: remote-tools
+#     url: https://example.com/mcp
+
+# OS sandbox adapters require Linux bubblewrap or macOS sandbox-exec.
+sandbox:
+  enabled: false
+  auto_allow: false
+  network_enabled: false
