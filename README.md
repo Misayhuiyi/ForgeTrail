@@ -228,6 +228,6 @@ uv run python -m compileall -q forgetrail
 
 ## 开源与维护
 
-ForgeTrail 在已有终端 Coding Agent 代码基础上整理和维护
+ForgeTrail 由 MisayHuiyi 维护。
 
 欢迎围绕可复现问题提交 Issue，提供操作系统、Python 版本、使用入口、脱敏配置和复现步骤。请勿提交 API Key、个人会话记录或敏感业务资料。

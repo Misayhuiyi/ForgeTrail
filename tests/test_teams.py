@@ -1,9 +1,5 @@
-# 来源：公众号@小林coding
-# 后端八股网站：xiaolincoding.com
-# Agent网站：xiaolinnote.com
-# 简历模版：jianli.xiaolinnote.com
 
-"""Agent Team（智能体团队）系统的测试（第 14 章）。"""
+"""Agent Team（智能体团队）系统的测试。"""
 
 from __future__ import annotations
 
